@@ -90,10 +90,8 @@ function loadTodo() {
   //your code here
   const dataJSON = localStorage.getItem("todo list");
   const data = JSON.parse(dataJSON);
-  console.log(data);
 
   for (const todoObj of data) {
-    console.log(todoObj);
     addTodo(todoObj.title, todoObj.completed);
   }
 }
